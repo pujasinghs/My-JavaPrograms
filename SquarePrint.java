@@ -48,22 +48,33 @@ public class SquarePrint {
 		    }
 		    */
 		
-		int rows=4 ,starprint=1;
-		for (int i=1;i<=5;i++)
-		{
-			for (int j=1;j<=rows;j++)
-			{
+		int space=4 ,starprint=1;
+		for (int i=1;i<=5;i++) {
+			for (int j=1;j<=space;j++) {
 				System.out.print(" ");
 			}
-			rows--;
-			for (int k=1;k<=starprint;k++)
-			{   
+			space--;
+			for (int k=1;k<=starprint;k++) {   
 				System.out.print("*");
 			}
 			starprint+=2;
 			System.out.println();
 		}
-
-
+		space=1;starprint=7;
+		for (int l=1;l<5;l++)
+		{
+			for (int m=1;m<=space;m++)
+			{
+				System.out.print(" ");
+			}
+			space++;
+			for(int n=1;n<=starprint;n++)
+			{
+				System.out.print("*");
+			}
+			starprint-=2;
+			System.out.println();
+		}
+		
 }}
         
